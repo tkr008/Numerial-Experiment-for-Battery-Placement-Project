@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html practice</title>
+</head>
+<body>
+    <h1>Description</h1> 
+    <h2>This is a website exclusively for the numerical experiment results.</h2>
+    <h1>Remark1</h1> 
+    <table border="1">
+        <tr>
+            <th>deterministic gap</th>
+            <td>Delta_tilde = 0.8</td>
+        </tr>
+        <tr>
+            <th>random gap</th>
+            <td>Delta_tilde = uniform(0.5, 1.1, dim=number_of_node-1)</td>
+        </tr>
+        <tr>
+            <th>deterministic f</th>
+            <td>f = 1</td>
+        </tr>
+        <tr>
+            <th>random f</th>
+            <td>f = uniform(0.7, 1.3, dim=number_of_edge)</td>
+        </tr>
+    </table>
+    <h1>Remark2</h1> 
+    0, 5, 10, 20 are labels with the following meaning:
+    <table border="1">
+        <tr>
+            <th>label</th>
+            <td>meaning</td>
+            <td>color</td>
+
+        </tr>
+        <tr>
+            <th>0</th>
+            <td>Maxflow is constrainted by the generation capacity. All the n-1 nodes generate at g_tilde.</td>
+            <td>purple</td>
+        </tr>
+        <tr>
+            <th>20</th>
+            <td>Maxflow is constrainted by the line capacity neighboring the battery.</td>
+            <td>red</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>For each connected component, either case 0 or 20.</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <th>10</th>
+            <td>None of the above.</td>
+            <td>light green</td>
+        </tr>
+    
+
+    </table>
+
+
+    <h1>Numerical results</h1>
+
+    <h2>Erdos Renyi graph with n=5, deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/random_5nodes_dgdf.png"></td><td><img src="./figure1/random_5nodes_dgdf_.png"></td><td><img src="./figure1/random_5nodes_dgdf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=5, deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/random_5nodes_dgrf.png"></td><td><img src="./figure1/random_5nodes_dgrf_.png"></td><td><img src="./figure1/random_5nodes_dgrf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=5, random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/random_5nodes_rgdf.png"></td><td><img src="./figure1/random_5nodes_rgdf_.png"></td><td><img src="./figure1/random_5nodes_rgdf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=5, random gap, random f</h2>
+    <table><tr><td><img src="./figure1/random_5nodes_rgrf.png"></td><td><img src="./figure1/random_5nodes_rgrf_.png"></td><td><img src="./figure1/random_5nodes_rgrf_seg_mean.png"></td></tr></table>
+
+    <h2>Erdos Renyi graph with n=8, deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/random_8nodes_dgdf.png"></td><td><img src="./figure1/random_8nodes_dgdf_.png"></td><td><img src="./figure1/random_8nodes_dgdf_seg_mean.png"></td></tr></table>
+
+    <h2>Erdos Renyi graph with n=11, deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/random_11nodes_dgdf.png"></td><td><img src="./figure1/random_11nodes_dgdf_.png"></td><td><img src="./figure1/random_11nodes_dgdf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=11, deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/random_11nodes_dgrf.png"></td><td><img src="./figure1/random_11nodes_dgrf_.png"></td><td><img src="./figure1/random_11nodes_dgrf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=11, random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/random_11nodes_rgdf.png"></td><td><img src="./figure1/random_11nodes_rgdf_.png"></td><td><img src="./figure1/random_11nodes_rgdf_seg_mean.png"></td></tr></table>
+    <h2>Erdos Renyi graph with n=11, random gap, random f</h2>
+    <table><tr><td><img src="./figure1/random_11nodes_rgrf.png"></td><td><img src="./figure1/random_11nodes_rgrf_.png"></td><td><img src="./figure1/random_11nodes_rgrf_seg_mean.png"></td></tr></table>
+
+
+
+    <h2>Small world graph with n=5, k=2, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_dgdf_2_0.1.png"></td><td><img src="./figure1/small_world_5nodes_dgdf_2_0.1_.png"></td><td><img src="./figure1/small_world_5nodes_dgdf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_dgrf_2_0.1.png"></td><td><img src="./figure1/small_world_5nodes_dgrf_2_0.1_.png"></td><td><img src="./figure1/small_world_5nodes_dgrf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_rgdf_2_0.1.png"></td><td><img src="./figure1/small_world_5nodes_rgdf_2_0.1_.png"></td><td><img src="./figure1/small_world_5nodes_rgdf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_rgrf_2_0.1.png"></td><td><img src="./figure1/small_world_5nodes_rgrf_2_0.1_.png"></td><td><img src="./figure1/small_world_5nodes_rgrf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_dgdf_2_0.3.png"></td><td><img src="./figure1/small_world_5nodes_dgdf_2_0.3_.png"></td><td><img src="./figure1/small_world_5nodes_dgdf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_dgrf_2_0.3.png"></td><td><img src="./figure1/small_world_5nodes_dgrf_2_0.3_.png"></td><td><img src="./figure1/small_world_5nodes_dgrf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_rgdf_2_0.3.png"></td><td><img src="./figure1/small_world_5nodes_rgdf_2_0.3_.png"></td><td><img src="./figure1/small_world_5nodes_rgdf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=5, k=2, prob=0.3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_5nodes_rgrf_2_0.3.png"></td><td><img src="./figure1/small_world_5nodes_rgrf_2_0.3_.png"></td><td><img src="./figure1/small_world_5nodes_rgrf_2_0.3_seg_mean.png"></td></tr></table>
+
+    <h2>Small world graph with n=8, k=2, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_dgdf_2_0.1.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_2_0.1_.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=8, k=2, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_dgdf_2_0.3.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_2_0.3_.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=8, k=6, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_dgdf_6_0.3.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_6_0.3_.png"></td><td><img src="./figure1/small_world_8nodes_dgdf_6_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=8, k=6, prob=0.3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_dgrf_6_0.3.png"></td><td><img src="./figure1/small_world_8nodes_dgrf_6_0.3_.png"></td><td><img src="./figure1/small_world_8nodes_dgrf_6_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=8, k=6, prob=0.3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_rgdf_6_0.3.png"></td><td><img src="./figure1/small_world_8nodes_rgdf_6_0.3_.png"></td><td><img src="./figure1/small_world_8nodes_rgdf_6_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=8, k=6, prob=0.3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_8nodes_rgrf_6_0.3.png"></td><td><img src="./figure1/small_world_8nodes_rgrf_6_0.3_.png"></td><td><img src="./figure1/small_world_8nodes_rgrf_6_0.3_seg_mean.png"></td></tr></table>
+
+    <h2>Small world graph with n=11, k=2, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_2_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_2_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_2_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_2_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_2_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_2_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_2_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_2_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_2_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_2_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_2_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_2_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_2_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_2_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_2_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=2, prob=0.3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_2_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_2_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_2_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_4_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_4_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_4_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_4_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_4_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_4_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_4_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_4_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_4_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_4_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_4_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_4_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_4_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_4_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_4_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_4_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_4_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_4_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_4_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_4_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_4_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=4, prob=0.3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_4_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_4_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_4_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=6, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_6_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=6, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_6_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=6, prob=0.5 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_6_0.5.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.5_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_6_0.5_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_8_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_8_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_8_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_8_0.1.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_8_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_8_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_8_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_8_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_8_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_8_0.1.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_8_0.1_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_8_0.1_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgdf_8_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_8_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgdf_8_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_dgrf_8_0.3.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_8_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_dgrf_8_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgdf_8_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_8_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgdf_8_0.3_seg_mean.png"></td></tr></table>
+    <h2>Small world graph with n=11, k=8, prob=0.3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/small_world_11nodes_rgrf_8_0.3.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_8_0.3_.png"></td><td><img src="./figure1/small_world_11nodes_rgrf_8_0.3_seg_mean.png"></td></tr></table>
+    
+
+    <h2>Scale free graph with n=5, m=1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgdf_1.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_1_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgrf_1.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_1_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgdf_1.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_1_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgrf_1.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_1_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgdf_2.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_2_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=2 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgrf_2.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_2_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=2 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgdf_2.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_2_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=2 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgrf_2.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_2_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgdf_3.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_3_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgdf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_dgrf_3.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_3_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_dgrf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgdf_3.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_3_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgdf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=5, m=3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_5nodes_rgrf_3.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_3_.png"></td><td><img src="./figure1/barabasi_albert_5nodes_rgrf_3_seg_mean.png"></td></tr></table>
+
+    <h2>Scale free graph with n=8, m=1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_8nodes_dgdf_1.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_1_.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=8, m=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_8nodes_dgdf_2.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_2_.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=8, m=3 deterministic gap, deterministic f</h2>`
+    <table><tr><td><img src="./figure1/barabasi_albert_8nodes_dgdf_3.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_3_.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=8, m=4 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_8nodes_dgdf_4.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_4_.png"></td><td><img src="./figure1/barabasi_albert_8nodes_dgdf_4_seg_mean.png"></td></tr></table>
+    
+    <h2>Scale free graph with n=11, m=1 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_1.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_1_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=1 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_1.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_1_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=1 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_1.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_1_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=1 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_1.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_1_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_1_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_2.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_2_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=2 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_2.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_2_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=2 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_2.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_2_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=2 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_2.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_2_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=3 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_3.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_3_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=3 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_3.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_3_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=3 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_3.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_3_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=3 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_3.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_3_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_3_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=4 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_4.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_4_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=4 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_4.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_4_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_4_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=4 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_4.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_4_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=4 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_4.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_4_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_4_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=5 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_5.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_5_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_5_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=5 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_5.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_5_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_5_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=5 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_5.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_5_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_5_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=5 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_5.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_5_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_5_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=6 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgdf_6.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_6_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgdf_6_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=6 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_dgrf_6.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_6_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_dgrf_6_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=6 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgdf_6.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_6_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgdf_6_seg_mean.png"></td></tr></table>
+    <h2>Scale free graph with n=11, m=6 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/barabasi_albert_11nodes_rgrf_6.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_6_.png"></td><td><img src="./figure1/barabasi_albert_11nodes_rgrf_6_seg_mean.png"></td></tr></table>
+
+
+    <h2>Regular graph with n=5, k=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_dgdf_2.png"></td><td><img src="./figure1/regular_5nodes_dgdf_2_.png"></td><td><img src="./figure1/regular_5nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=2 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_dgrf_2.png"></td><td><img src="./figure1/regular_5nodes_dgrf_2_.png"></td><td><img src="./figure1/regular_5nodes_dgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=2 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_rgdf_2.png"></td><td><img src="./figure1/regular_5nodes_rgdf_2_.png"></td><td><img src="./figure1/regular_5nodes_rgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=2 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_rgrf_2.png"></td><td><img src="./figure1/regular_5nodes_rgrf_2_.png"></td><td><img src="./figure1/regular_5nodes_rgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=4 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_dgdf_4.png"></td><td><img src="./figure1/regular_5nodes_dgdf_4_.png"></td><td><img src="./figure1/regular_5nodes_dgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=4 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_dgrf_4.png"></td><td><img src="./figure1/regular_5nodes_dgrf_4_.png"></td><td><img src="./figure1/regular_5nodes_dgrf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=4 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_rgdf_4.png"></td><td><img src="./figure1/regular_5nodes_rgdf_4_.png"></td><td><img src="./figure1/regular_5nodes_rgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=5, k=4 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_5nodes_rgrf_4.png"></td><td><img src="./figure1/regular_5nodes_rgrf_4_.png"></td><td><img src="./figure1/regular_5nodes_rgrf_4_seg_mean.png"></td></tr></table>
+
+    <h2>Regular graph with n=8, k=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_8nodes_dgdf_2.png"></td><td><img src="./figure1/regular_8nodes_dgdf_2_.png"></td><td><img src="./figure1/regular_8nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=8, k=4 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_8nodes_dgdf_4.png"></td><td><img src="./figure1/regular_8nodes_dgdf_4_.png"></td><td><img src="./figure1/regular_8nodes_dgdf_4_seg_mean.png"></td></tr></table>
+    
+    <h2>Regular graph with n=11, k=2 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_dgdf_2.png"></td><td><img src="./figure1/regular_11nodes_dgdf_2_.png"></td><td><img src="./figure1/regular_11nodes_dgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=2 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_dgrf_2.png"></td><td><img src="./figure1/regular_11nodes_dgrf_2_.png"></td><td><img src="./figure1/regular_11nodes_dgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=2 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_rgdf_2.png"></td><td><img src="./figure1/regular_11nodes_rgdf_2_.png"></td><td><img src="./figure1/regular_11nodes_rgdf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=2 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_rgrf_2.png"></td><td><img src="./figure1/regular_11nodes_rgrf_2_.png"></td><td><img src="./figure1/regular_11nodes_rgrf_2_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=4 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_dgdf_4.png"></td><td><img src="./figure1/regular_11nodes_dgdf_4_.png"></td><td><img src="./figure1/regular_11nodes_dgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=4 deterministic gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_dgrf_4.png"></td><td><img src="./figure1/regular_11nodes_dgrf_4_.png"></td><td><img src="./figure1/regular_11nodes_dgrf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=4 random gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_rgdf_4.png"></td><td><img src="./figure1/regular_11nodes_rgdf_4_.png"></td><td><img src="./figure1/regular_11nodes_rgdf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=4 random gap, random f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_rgrf_4.png"></td><td><img src="./figure1/regular_11nodes_rgrf_4_.png"></td><td><img src="./figure1/regular_11nodes_rgrf_4_seg_mean.png"></td></tr></table>
+    <h2>Regular graph with n=11, k=6 deterministic gap, deterministic f</h2>
+    <table><tr><td><img src="./figure1/regular_11nodes_dgdf_6.png"></td><td><img src="./figure1/regular_11nodes_dgdf_6_.png"></td><td><img src="./figure1/regular_11nodes_dgdf_6_seg_mean.png"></td></tr></table>
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
+
+
+
+
+
